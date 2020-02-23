@@ -1,0 +1,348 @@
+@font-face {
+	font-family: "Spartan Semi-Bold";
+	src: url("../fonts/SpartanMB-SemiBold.otf");
+}
+
+@font-face {
+	font-family: "Spartan Regular";
+	src: url("../fonts/SpartanMB-Regular.otf");
+}
+
+html {
+	height: 100%;
+}
+body {
+	background-image: url(../img/background-rc.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100%;
+	margin: 0;
+}
+/*Header & navigation*/
+header {
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#logo {
+	max-width: 120px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li a {
+	font-family: "Spartan Semi-Bold", sans serif;
+	text-transform: lowercase;
+	color: rgba(22,36,68,0.9);
+	font-size: 1.9em;
+	display: block;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	margin-left: 60px;
+	text-decoration: none;
+}
+
+li a:hover, strong {
+	color: #ffffff;
+}
+
+li a:active {
+	color: #15990e;
+}
+
+
+/*Main content*/
+
+main {
+	width: 65%;
+	height: 100%;
+	float: left;
+}
+
+h1.home-heading {
+	font-family: "Spartan Semi-Bold", sans serif;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 70px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	font-size: 1.7em;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "Spartan Regular", sans serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+input[type=text] {
+	font-style: italic;
+	width: 97.5%;
+	padding: 10px 10px;
+	font-size: 1em;
+	font-family: "Spartan Regular", sans serif;
+	border: 30px solid rgba(21,153,14,0.8);
+}
+
+div.searchbox {
+	width: 60%;
+	position: absolute;
+	top: 170px;
+	left: 25%;
+}
+
+div.mainsection {
+	min-height: 100%;
+	width: 70%;
+	background-color: rgba(255,255,255,0.8);
+	padding-left: 5%;
+	margin: 0;
+	position: absolute;
+	overflow-y: overlay;
+}
+
+div.mainsection h1 {
+	color: #2d2d2d;
+	font-family: Verdana, sans serif;
+	font-size: 1.2em;
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+
+div.mainsection p {
+	width: 55%;
+	font-family: Verdana, sans serif;
+	font-size: 1.1em;
+	color: #2d2d2d;
+}
+
+div.mainsection a {
+	font-family: "Spartan Semi-Bold", sans serif;
+	color: rgba(22,36,68,0.9);
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+div.mainsection a:hover {
+	color: #000000;
+}
+
+div.mainsection a:active {
+	color: #15990e;
+}
+
+div.tours {
+	max-width: 100%;
+}
+
+div.col1 {
+	max-width: 450px;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+div.col2 {
+	max-width: 450px;
+	display: inline-block;
+}
+
+div.tours img {
+    display: inline-block;
+    margin: 20px auto;
+    max-width: 470px;
+}
+
+div.photobox {
+	position: relative;
+    color: white;
+}
+
+div.phototext {
+	width: 440px;
+	position: absolute;
+    bottom: 8%;
+    background-color: rgba(45,45,45,0.6);
+    font-family: "Spartan Regular", sans serif;
+    padding: 6px 15px;
+}
+
+div.phototext a {
+	color: white;
+	font-size: 1.1em;
+	font-family: "Spartan Regular", sans serif;
+}
+
+div.phototext a:hover {
+	font-style: italic;
+	color: #7a96cc;
+}
+
+/*Footer*/
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+footer p{
+	text-align: center;
+	font-family: "Spartan Semi-Bold", sans serif;
+	font-style: italic;
+	color: #000000;
+	padding-bottom: 10px;
+}
+
+/*Media queries*/
+@media screen and (min-width: 769px) {
+	body {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 60%
+	}
+	header {
+		width: 100%;
+		height: auto;
+	}
+	#logo {
+		display: inline;
+		width: 50px;
+		margin: 10px;
+	}
+	nav {
+		overflow: auto;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	ul {
+		position: relative;
+		display: inline;
+		margin: 10px auto;
+	}
+	li {
+		display: inline-block;
+	}
+	li a {
+		float: left;
+		margin: 0;
+		display: inline;
+		padding: 0 15px;
+	}
+	main {
+		margin: unset;
+		width: 100%;
+	}
+	h1.home-heading {
+		margin: 20px auto;
+	}
+	div.searchbox {
+		left: 7%;
+		margin: auto;
+		width: 80%;
+	}
+	input[type=text] {
+		width: 92%;
+		font-size: 1.3em;
+	}
+	div.mainsection h1 {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	div.mainsection {
+		padding-left: unset;
+		position: relative;
+		margin: 0 auto;
+		overflow-y: unset;
+		width: 100%;
+		min-height: 100vh;
+	}
+	div.mainsection p, div.mainsection h2 {
+		padding-left: 10px;
+		width: 90%;
+		font-size: 1.6em;
+	}
+
+	div.col1, div.col2 {
+		width: 90%;
+    	display: block;
+    	margin: 10px auto;
+   	 	padding: 0;
+    	float: none;
+	}
+	div.photobox, div.photobox img {
+		width: 100%;
+	}
+	div.phototext {
+		width: unset;
+	}
+	div.tours {
+		max-width: unset;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 40%;
+		width: 100%;
+	}
+	header {
+		width: 100%;
+		height: auto;
+		float: unset;
+		margin: 10px auto;
+	}
+	#logo {
+		display: none;
+	}
+	nav {
+		overflow: auto;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	ul {
+		position: relative;
+		display: inline;
+		margin: 10px auto;
+		padding-left: 0;
+	}
+	li {
+		display: inline-block;
+	}
+	li a {
+		float: left;
+		margin: 0 auto;
+		display: inline;
+		padding: 0 15px;
+	}
+	main {
+		margin: auto;
+		width: 100%;
+	}
+	h1.home-heading {
+		margin: 20px auto;
+	}
+	div.searchbox {
+		left: unset;
+		top: 140px;
+		margin: 0 auto;
+		width: 80%;
+	}
+	input[type=text] {
+		width: 100%;
+	}
+}
